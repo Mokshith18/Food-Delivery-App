@@ -1,0 +1,91 @@
+@charset "ISO-8859-1";
+*{
+    margin: 0;
+    font-family: sans-serif;
+   
+}
+body{
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	 overflow:auto;
+}
+header{
+    background-color: grey;
+    height: 150px;
+}
+header h1{
+    text-align: center;
+    padding: 10px 0px;
+}
+.nav-container {
+    display: flex;
+    justify-content: center; /* Center the navigation bar horizontally */
+}
+
+nav {
+    display: flex; /* Display the navigation links as a flex container */
+}
+
+nav a,
+nav span {
+    margin: 0 10px; /* Add spacing between navigation items */
+    text-decoration: none; /* Remove underline from links */
+    color: black; /* Text color */
+}
+
+
+footer {
+     background-color: grey;
+     color: black;
+     text-align: center;
+}
+footer p{
+	padding:20px 0px;
+}
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Distribute items evenly in the row */
+    
+}
+
+.column {
+    flex: 0 0 calc(50% - 20px); /* Two columns per row with spacing */
+    max-width: calc(50% - 20px); /* Two columns per row with spacing */
+    margin-bottom: 20px; /* Add bottom margin for spacing between rows */
+}
+
+.picdiv {
+    padding: 10px;
+    border: 1px solid #ccc;
+     text-align: center;
+}
+
+.picdiv img {
+    max-width: 100%; /* Ensure the image doesn't overflow its container */
+    max-height: 200px; /* Adjust the maximum height as needed */
+    /*padding:0 30%;*/
+    display: inline-block;
+    margin:auto;
+    width: auto;
+    height: auto; /* Maintain aspect ratio */
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff; /* Button background color */
+    color: #fff; /* Text color */
+    text-decoration: none; /* Remove underline */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition on hover */
+}
+
+.button:hover {
+    background-color: #0056b3; /* Darker color on hover */
+}

@@ -1,0 +1,20 @@
+@charset "ISO-8859-1";
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+h1, h2 {
+    text-align: center;
+    margin-top: 30px;
+}
+
+p {
+    margin: 10px 0;
+    text-align: center;
+}
+
+/* Optional: You can add specific styles for individual elements if needed */
